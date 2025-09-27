@@ -3,12 +3,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class homeController extends Controller{
     public function requestMethod(Request $request){
-        $name = $request->name;
-        $surname = $request->surname;
-        $age = $request->age;
-        $color = 'black';
-        $languages = ['js','python','php','java'];
-        return view('index',compact('name','surname','age','languages','color'));
+        $users = [
+            ["id" =>"1", "name" => "yassine", "age"=> 19],
+            ["id" =>"2", "name" => "ahmed", "age"=> 29],
+            ["id" =>"3", "name" => "khadija", "age"=> 30]
+        ];
+        return view('index',compact('users'));
     }
 }
 
