@@ -13,7 +13,5 @@
                     <td>{{$user['age']}}</td>
                 </tr>
         @endforeach
-      
-
     </table>
 </div>
